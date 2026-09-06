@@ -1,0 +1,11 @@
+found 537 udiff bhavcopy files
+  parsed 100/537
+  parsed 200/537
+  parsed 300/537
+  parsed 400/537
+  parsed 500/537
+  year 2024: 346237 rows (dedup dropped 0)
+  year 2025: 763792 rows (dedup dropped 0)
+  year 2026: 566019 rows (dedup dropped 0)
+TOTAL rows written: 1676048
+errors: 0

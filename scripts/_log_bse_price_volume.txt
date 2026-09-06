@@ -1,0 +1,33 @@
+found 4374 old-format + 660 new-format files
+  old parsed 1000/4374
+  old parsed 2000/4374
+  old parsed 3000/4374
+  old parsed 4000/4374
+  new parsed 200/660
+  new parsed 400/660
+  new parsed 600/660
+  year 2006: 514824 rows
+  year 2007: 680015 rows
+  year 2008: 662424 rows
+  year 2009: 614564 rows
+  year 2010: 761004 rows
+  year 2011: 733398 rows
+  year 2012: 745473 rows
+  year 2013: 675042 rows
+  year 2014: 756934 rows
+  year 2015: 754269 rows
+  year 2016: 736169 rows
+  year 2017: 761078 rows
+  year 2018: 738721 rows
+  year 2019: 711088 rows
+  year 2020: 758979 rows
+  year 2021: 889887 rows
+  year 2022: 946543 rows
+  year 2023: 988042 rows
+  year 2024: 1075743 rows
+  year 2025: 1141101 rows
+  year 2026: 812229 rows
+TOTAL rows written: 16457527
+errors: 1
+  ERR c:/Workdesk/raw/bse/bhavcopy\2021\EQ291221_CSV.ZIP: Error tokenizing data. C error: Expected 14 fields in line 1773, saw 27
+

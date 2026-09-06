@@ -1,0 +1,34 @@
+found 6132 MTO files
+  parsed 1000/6132
+  parsed 2000/6132
+  parsed 3000/6132
+  parsed 4000/6132
+  parsed 5000/6132
+  parsed 6000/6132
+  year 2002: 186876 rows
+  year 2003: 173284 rows
+  year 2004: 187604 rows
+  year 2005: 186818 rows
+  year 2006: 212992 rows
+  year 2007: 262633 rows
+  year 2008: 288594 rows
+  year 2009: 282118 rows
+  year 2010: 335006 rows
+  year 2011: 359440 rows
+  year 2012: 369270 rows
+  year 2013: 346926 rows
+  year 2014: 345084 rows
+  year 2015: 378510 rows
+  year 2016: 396549 rows
+  year 2017: 409301 rows
+  year 2018: 423816 rows
+  year 2019: 433013 rows
+  year 2020: 450017 rows
+  year 2021: 459274 rows
+  year 2022: 513142 rows
+  year 2023: 546196 rows
+  year 2024: 612919 rows
+  year 2025: 700323 rows
+  year 2026: 530230 rows
+TOTAL rows written: 9389935
+errors: 0

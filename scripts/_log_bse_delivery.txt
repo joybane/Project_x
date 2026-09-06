@@ -1,0 +1,29 @@
+found 5060 BSE delivery files
+  parsed 1000/5060
+  parsed 2000/5060
+  parsed 3000/5060
+  parsed 4000/5060
+  parsed 5000/5060
+  year 2006: 526519 rows
+  year 2007: 678452 rows
+  year 2008: 666527 rows
+  year 2009: 661089 rows
+  year 2010: 759703 rows
+  year 2011: 738765 rows
+  year 2012: 745237 rows
+  year 2013: 674904 rows
+  year 2014: 757036 rows
+  year 2015: 754270 rows
+  year 2016: 736453 rows
+  year 2017: 761096 rows
+  year 2018: 738741 rows
+  year 2019: 711094 rows
+  year 2020: 758988 rows
+  year 2021: 893633 rows
+  year 2022: 946560 rows
+  year 2023: 988043 rows
+  year 2024: 1075726 rows
+  year 2025: 1140987 rows
+  year 2026: 812227 rows
+TOTAL rows written: 16526050
+errors: 0

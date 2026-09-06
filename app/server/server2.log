@@ -1,0 +1,2 @@
+2026/09/06 14:09:19 stockapp server listening on http://127.0.0.1:8787
+2026/09/06 14:09:19 listen tcp 127.0.0.1:8787: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.

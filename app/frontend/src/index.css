@@ -1,0 +1,135 @@
+@import "tailwindcss";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Neutral charcoal - not pitch black, and no blue cast - with a gold accent */
+  --color-background: #19191b;
+  --color-foreground: #ececea;
+
+  --color-card: #212123;
+  --color-card-foreground: #ececea;
+
+  /* Main content body backdrop - a step lighter than card/background, so the
+     chart card reads as a slightly recessed surface sitting on top of it */
+  --color-surface: #2a2a2d;
+
+  --color-popover: #242426;
+  --color-popover-foreground: #ececea;
+
+  --color-border: #303032;
+  --color-input: #303032;
+
+  --color-muted: #242426;
+  --color-muted-foreground: #9c9c9a;
+
+  --color-accent: #2a2a2d;
+  --color-accent-foreground: #ececea;
+
+  --color-primary: #cb9b3f;
+  --color-primary-foreground: #201a0d;
+
+  --color-secondary: #242426;
+  --color-secondary-foreground: #ececea;
+
+  --color-success: #26a69a;
+  --color-success-foreground: #f8fafc;
+  --color-danger: #ef5350;
+  --color-danger-foreground: #f8fafc;
+
+  --color-ring: #cb9b3f;
+
+  /* Deep slate-blue, deliberately cool against the rest of the charcoal+gold
+     theme, so the deals drawer reads as a distinct, easy-to-spot surface */
+  --color-panel: #171b26;
+  --color-panel-foreground: #e6e9f0;
+  --color-panel-border: #262c3d;
+
+  --radius: 0.5rem;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.deals-overlay { position: fixed; inset: 0; z-index: 50; }
+.deals-backdrop { position: absolute; inset: 0; background: #0009; }
+.deals-panel { position: absolute; inset: 0 0 0 auto; width: min(760px, 100%); display: flex; flex-direction: column; background: #202323; color: #edf1ef; border-left: 1px solid #424948; box-shadow: -16px 0 48px #0005; color-scheme: dark; outline: none; letter-spacing: 0; }
+.deals-panel-expanded { width: 100%; }
+.deals-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 20px; border-bottom: 1px solid #39403e; flex-shrink: 0; }
+.deals-eyebrow { font-size: 10px; color: #aab7b2; font-weight: 600; }
+.deals-heading h2 { font-size: 20px; font-weight: 600; margin: 3px 0 0; overflow-wrap: anywhere; }
+.deals-actions { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.deals-icon { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border: 1px solid #414a46; border-radius: 5px; color: #cbd4d0; flex-shrink: 0; }
+.deals-panel button { cursor: pointer; }
+.deals-panel button:disabled { opacity: .3; cursor: default; }
+.deals-panel button:hover:not(:disabled) { background: #36403c; }
+.deals-panel :is(button, input, select):focus-visible { outline: 2px solid #7ed2b0; outline-offset: 2px; }
+.deals-controls { padding: 14px 20px; border-bottom: 1px solid #39403e; flex-shrink: 0; }
+.deals-range { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.deals-range label { display: grid; gap: 5px; font-size: 11px; color: #aab7b2; min-width: 0; }
+.deals-panel input, .deals-panel select { min-width: 0; font-size: 12px; color: #edf1ef; background: #292e2c; border: 1px solid #454d49; border-radius: 5px; height: 34px; padding: 0 9px; }
+.deals-range input { width: 100%; }
+.deals-presets { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+.deals-presets button { font-size: 11px; padding: 5px 10px; border-radius: 4px; color: #b5c0bb; }
+.deals-presets button[aria-pressed="true"] { background: #344a40; color: #a6e9c9; }
+.deals-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 16px 20px; gap: 12px; border-bottom: 1px solid #39403e; flex-shrink: 0; }
+.deals-metrics > div { min-width: 0; }
+.deals-metrics span { display: block; font-size: 11px; color: #aab7b2; }
+.deals-metrics strong { display: block; margin-top: 5px; font-size: 18px; font-weight: 600; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.deals-positive { color: #79d6ad; }
+.deals-negative { color: #f19491; }
+.deals-toolbar { display: flex; flex-wrap: wrap; gap: 10px; padding: 12px 20px; align-items: center; flex-shrink: 0; }
+.deals-tabs { display: flex; border-bottom: 1px solid #454d49; }
+.deals-tabs button { height: 34px; padding: 0 10px; font-size: 12px; color: #aab7b2; border-bottom: 2px solid transparent; }
+.deals-tabs button[aria-pressed="true"] { color: #a6e9c9; border-bottom-color: #79d6ad; }
+.deals-search { display: flex; align-items: center; position: relative; flex: 1; min-width: 150px; }
+.deals-search svg { position: absolute; left: 10px; color: #aab7b2; }
+.deals-search input { width: 100%; padding-left: 32px; }
+.deals-grid { flex: 1; min-height: 80px; overflow: auto; overscroll-behavior: contain; scrollbar-color: #53645a #202323; border-top: 1px solid #39403e; }
+.deals-grid table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 12px; }
+.deals-grid th { position: sticky; top: 0; z-index: 1; background: #2b322f; font-weight: 500; color: #b8c4be; text-align: left; white-space: nowrap; }
+.deals-grid :is(th, td) { padding: 11px 14px; border-bottom: 1px solid #343c38; }
+.deals-grid td { vertical-align: middle; }
+.deals-grid tbody tr:nth-child(even) { background: #242927; }
+.deals-grid tbody tr:hover { background: #303b35; }
+.deals-grid .numeric { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.deals-date { white-space: nowrap; color: #c5cfca; }
+.deals-client { min-width: 140px; max-width: 360px; overflow-wrap: anywhere; }
+.deals-grid small { display: block; color: #96a59d; font-size: 10px; margin-top: 4px; }
+.deals-side { display: inline-block; font-size: 10px; font-weight: 600; padding: 3px 5px; border-radius: 3px; }
+.deals-buy { color: #91e0b9; background: #29463a; }
+.deals-sell { color: #f3aaa5; background: #493130; }
+.deals-footer { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 20px; border-top: 1px solid #39403e; flex-shrink: 0; font-size: 12px; }
+.deals-footer small { display: block; font-size: 10px; color: #9bacA2; margin-top: 4px; }
+.deals-page { font-size: 11px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.deals-state { padding: 40px 20px; text-align: center; color: #b8c4be; font-size: 13px; }
+.deals-state p { margin-top: 8px; }
+.deals-state button { margin-top: 12px; padding: 6px 18px; border: 1px solid #53645a; border-radius: 4px; }
+@media (max-width: 480px) {
+  .deals-heading, .deals-controls, .deals-toolbar, .deals-metrics, .deals-footer { padding-left: 12px; padding-right: 12px; }
+  .deals-metrics { gap: 8px; }
+  .deals-metrics strong { font-size: 14px; }
+  .deals-search { flex-basis: 100%; }
+  .deals-grid :is(th, td) { padding: 9px 10px; }
+  .deals-footer { gap: 6px; }
+}
+@media (max-height: 620px) {
+  .deals-heading, .deals-controls, .deals-metrics, .deals-toolbar, .deals-footer { padding-top: 7px; padding-bottom: 7px; }
+  .deals-panel { overflow-y: auto; }
+  .deals-grid { min-height: 120px; }
+}

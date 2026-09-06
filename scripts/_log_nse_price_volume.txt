@@ -1,0 +1,41 @@
+found 7364 legacy bhavcopy files
+  parsed 1000/7364
+  parsed 2000/7364
+  parsed 3000/7364
+  parsed 4000/7364
+  parsed 5000/7364
+  parsed 6000/7364
+  parsed 7000/7364
+  year 1994: 5134 rows
+  year 1995: 160321 rows
+  year 1996: 270861 rows
+  year 1997: 290159 rows
+  year 1998: 263100 rows
+  year 1999: 281143 rows
+  year 2000: 246681 rows
+  year 2001: 240305 rows
+  year 2002: 187860 rows
+  year 2003: 180087 rows
+  year 2004: 196261 rows
+  year 2005: 211537 rows
+  year 2006: 233256 rows
+  year 2007: 277898 rows
+  year 2008: 303673 rows
+  year 2009: 310044 rows
+  year 2010: 354013 rows
+  year 2011: 371856 rows
+  year 2012: 391208 rows
+  year 2013: 367724 rows
+  year 2014: 386388 rows
+  year 2015: 391769 rows
+  year 2016: 409163 rows
+  year 2017: 437241 rows
+  year 2018: 463036 rows
+  year 2019: 472664 rows
+  year 2020: 498644 rows
+  year 2021: 515118 rows
+  year 2022: 557031 rows
+  year 2023: 605228 rows
+  year 2024: 346901 rows
+TOTAL rows written: 10226304
+errors: 0

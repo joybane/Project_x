@@ -1,0 +1,12 @@
+[bulk_deals] found 28 files
+  parsed 20/28
+[bulk_deals] rows before dedup=242251 after dedup=237803
+[bulk_deals] TOTAL rows written: 237803, errors: 0
+[block_deals] found 26 files
+  parsed 20/26
+[block_deals] rows before dedup=13480 after dedup=13073
+[block_deals] TOTAL rows written: 13073, errors: 0
+[short_selling] found 23 files
+  parsed 20/23
+[short_selling] rows before dedup=96653 after dedup=93775
+[short_selling] TOTAL rows written: 93775, errors: 0

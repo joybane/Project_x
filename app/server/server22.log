@@ -1,0 +1,2 @@
+2026/09/06 18:55:47 stockapp server listening on http://127.0.0.1:8787
+2026/09/06 18:57:24 [update] bse_index_sensex failed: https://api.bseindia.com/BseIndiaAPI/api/ProduceCSVForDate/w?dtFromDate=05%2F09%2F2026&dtToDate=06%2F09%2F2026&period=D&strIndex=SENSEX: EOF
