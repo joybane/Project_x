@@ -1,0 +1,97 @@
+/* Palette and compact workspace geometry adapted from D:/Hawkeye/Hawkeye/app/
+   globals.css and workspace-design.css. The chart subtree retains its original tokens. */
+.hawkeye-app {
+  --color-background: #1e2126;
+  --color-foreground: #ddd9d4;
+  --color-card: #2c3037;
+  --color-card-foreground: #f4f2ee;
+  --color-surface: #1e2126;
+  --color-popover: #3c414a;
+  --color-popover-foreground: #f4f2ee;
+  --color-border: #454136;
+  --color-input: #454136;
+  --color-muted: #343941;
+  --color-muted-foreground: #b6b3ae;
+  --color-accent: #343941;
+  --color-accent-foreground: #f4f2ee;
+  --color-primary: #d9b45f;
+  --color-primary-foreground: #1e2126;
+  --color-secondary: #343941;
+  --color-secondary-foreground: #ddd9d4;
+  --color-success: #5cbb6a;
+  --color-danger: #e5615c;
+  --color-ring: #d9b45f;
+  color-scheme: dark;
+  letter-spacing: 0;
+}
+.hawkeye-app .chart-preserved {
+  --color-background: #19191b;
+  --color-foreground: #ececea;
+  --color-card: #212123;
+  --color-card-foreground: #ececea;
+  --color-surface: #2a2a2d;
+  --color-border: #303032;
+  --color-muted-foreground: #9c9c9a;
+  --color-success: #26a69a;
+  --color-danger: #ef5350;
+}
+.hawkeye-app .workspace-sidebar { background: #2c3037; }
+.hawkeye-app .workspace-sidebar nav { padding: 18px 10px; gap: 4px; }
+.hawkeye-app .workspace-sidebar nav button { min-height: 40px; font-size: 12px; border-radius: 4px; }
+.hawkeye-app .workspace-sidebar span { letter-spacing: 0; }
+.hawkeye-app .workspace-header { background: #2c3037; }
+.hawkeye-app .workspace-header h1 { letter-spacing: 0; }
+.hawkeye-app :is(input, select, button):not(.chart-preserved *) { border-radius: 4px; }
+.hawkeye-app :is(input, select):not(.chart-preserved *) { accent-color: #d9b45f; }
+.hawkeye-app :is(button, input, select):focus-visible:not(.chart-preserved *) { outline: 2px solid #d9b45f; outline-offset: 2px; }
+.hawkeye-app .deals-panel { background: #2c3037; color: #ddd9d4; border-color: #454136; }
+.hawkeye-app :is(.deals-heading, .deals-controls, .deals-metrics, .deals-footer, .deals-grid) { border-color: #454136; }
+.hawkeye-app .deals-grid { scrollbar-color: #5b5340 #2c3037; }
+.hawkeye-app .deals-grid th { background: #454b54; color: #f4f2ee; }
+.hawkeye-app .deals-grid :is(th, td) { border-color: #454136; }
+.hawkeye-app .deals-grid tbody tr:nth-child(even) { background: #343941; }
+.hawkeye-app .deals-grid tbody tr:hover { background: #3c414a; }
+.hawkeye-app .deals-panel :is(input, select) { background: #343941; border-color: #5b5340; color: #ddd9d4; }
+.hawkeye-app .deals-panel button:hover:not(:disabled) { background: #3c414a; }
+.hawkeye-app .deals-icon { border-color: #5b5340; color: #ddd9d4; }
+.hawkeye-app :is(.deals-eyebrow, .deals-range label, .deals-metrics span, .deals-footer small, .deals-grid small) { color: #b6b3ae; }
+.hawkeye-app .deals-positive { color: #5cbb6a; }
+.hawkeye-app .deals-negative { color: #e5615c; }
+.hawkeye-app .deals-buy { background: #4caf501f; color: #5cbb6a; }
+.hawkeye-app .deals-sell { background: #df514c1f; color: #e5615c; }
+.hawkeye-app .deals-tabs button[aria-pressed="true"] { color: #d9b45f; border-bottom-color: #d9b45f; }
+.hawkeye-app .deals-presets button[aria-pressed="true"] { background: #d9b45f1f; color: #d9b45f; }
+.indicator-manager { position: relative; }
+.indicator-trigger { display: inline-flex; align-items: center; gap: 7px; height: 32px; padding: 0 9px; border: 1px solid #5b5340; color: #ddd9d4; background: #343941; font-size: 12px; cursor: pointer; }
+.indicator-trigger[aria-expanded="true"] { color: #d9b45f; border-color: #d9b45f; }
+.indicator-trigger > span { font-size: 10px; min-width: 16px; text-align: center; color: #d9b45f; }
+.indicator-pop { position: absolute; top: calc(100% + 8px); right: 0; z-index: 30; width: min(520px, calc(100vw - 32px)); max-height: min(560px, 70vh); overflow: auto; border: 1px solid #5b5340; border-radius: 4px; background: #2c3037; box-shadow: 0 8px 24px #0006; }
+.indicator-pop header { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-bottom: 1px solid #454136; }
+.indicator-pop header strong { font-size: 13px; }
+.indicator-pop button { display: inline-flex; align-items: center; justify-content: center; min-width: 28px; min-height: 28px; cursor: pointer; }
+.indicator-pop button:hover { color: #d9b45f; background: #343941; }
+.indicator-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 14px; }
+.indicator-options label { display: flex; align-items: center; gap: 7px; font-size: 11px; cursor: pointer; }
+.indicator-options input { width: 14px; height: 14px; flex-shrink: 0; }
+.indicator-list { border-top: 1px solid #454136; }
+.indicator-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 10px 12px; border-bottom: 1px solid #454136; font-size: 11px; }
+.indicator-row strong { flex: 1 1 100%; font-weight: 500; }
+.indicator-row :is(input, select) { padding: 3px 5px; height: 28px; background: #343941; border: 1px solid #5b5340; }
+.indicator-row input[type="color"] { width: 28px; padding: 2px; cursor: pointer; }
+.indicator-row input[type="number"] { width: 62px; margin-left: 5px; }
+.indicator-row button { margin-left: auto; }
+.hawkeye-app .deals-screener {
+  --color-card: #212123; --color-border: #303032; --color-accent: #2a2a2d;
+  --color-muted-foreground: #9c9c9a; --color-foreground: #ececea;
+  color: #ececea;
+}
+.deals-screener table { background: #212123; }
+.deals-screener thead { background: #19191b; }
+.deals-screener tbody tr:hover { background: #2a2a2d; }
+.scanner-pagination { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 10px; padding: 10px 0; font-size: 13px; color: #ececea; }
+.scanner-pagination > span:first-child { margin-right: auto; color: #9c9c9a; }
+@media (max-width: 700px) {
+  .hawkeye-app .workspace-header { height: auto; min-height: 56px; flex-wrap: wrap; padding: 10px 12px; }
+  .hawkeye-app .workspace-header > div { flex-wrap: wrap; margin-left: 0; }
+  .indicator-pop { position: fixed; top: 120px; right: 12px; left: 12px; width: auto; max-height: calc(100dvh - 144px); }
+}

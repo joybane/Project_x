@@ -1,0 +1,18 @@
+# Proprietary NSE/BSE market data - regenerated locally via scripts/, not tracked
+/nse/
+/bse/
+
+# Go build output / runtime logs
+app/server/*.exe
+app/server/*.log
+
+# Python
+**/__pycache__/
+*.pyc
+scripts/_log_*.txt
+
+# OS / editor
+.DS_Store
+.idea
+.vscode/*
+!.vscode/extensions.json
